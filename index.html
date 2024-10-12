@@ -52,6 +52,13 @@
         .cta button:hover, .cta a:hover {
             background-color: #ff8f81;
         }
+        /* Flexbox layout for CTA buttons */
+        .cta .cta-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between buttons */
+        }
         footer {
             margin-top: 50px;
             font-size: 0.9em;
@@ -72,17 +79,22 @@
         <!-- Standout Email Confirmation Message -->
         <p>Thank you for confirming your email! You can now sign in on the App! </p>
         <p>Maximize your rewards with CherryPick's tools:</p>
-        
-        <button onclick="window.location.href='com.cherrypick.maxccrewards://login'">Open the App</button>
+
+        <div class="cta-buttons">
+            <button onclick="window.location.href='com.cherrypick.maxccrewards://login'">Open the App</button>
+        </div>
         <!-- Call-to-action buttons with smaller size -->
         <br/>
-        <button onclick="window.location.href='https://chromewebstore.google.com/detail/cherry-pick-maximize-cred/ebankejienamjhfeecfcloemnggddgbf'">Install the Chrome Extension</button>
-
-        <a href="https://www.reddit.com/r/CherryPick" target="_blank">Join r/CherryPick</a>
+        <div class="cta-buttons">
+            <button onclick="window.location.href='https://chromewebstore.google.com/detail/cherry-pick-maximize-cred/ebankejienamjhfeecfcloemnggddgbf'">Install the Chrome Extension</button>
+            <a href="https://www.reddit.com/r/CherryPick" target="_blank">Join r/CherryPick</a>
+        </div>
 
         <p>Already using the extension? Leave a review! We would love to hear your feedback!</p>
 
-        <button onclick="window.location.href='https://chromewebstore.google.com/detail/cherry-pick-maximize-cred/ebankejienamjhfeecfcloemnggddgbf/reviews'">Leave a Review</button>
+        <div class="cta-buttons">
+            <button onclick="window.location.href='https://chromewebstore.google.com/detail/cherry-pick-maximize-cred/ebankejienamjhfeecfcloemnggddgbf/reviews'">Leave a Review</button>
+        </div>
         
     </section>
 
